@@ -1,0 +1,1311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kapoor &amp; Associates | Chartered Accountants</title>
+<meta name="description" content="Kapoor & Associates, Chartered Accountants. Statutory audit, GST, income tax, accounting, business compliance and financial advisory.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#10243a;
+  --navy-deep:#000e1f;
+  --gold:#e5c188;
+  --gold-light:#ffdea9;
+  --blue:#38618c;
+  --blue-soft:#a5ccfd;
+  --blue-tint:#e7eefc;
+  --bg:#f8f9ff;
+  --bg-2:#eff4ff;
+  --ink:#151c26;
+  --muted:#44474d;
+  --slate:#798ca6;
+  --line:#c4c6cd;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;font-family:'Manrope',system-ui,-apple-system,'Segoe UI',sans-serif;font-size:15px;line-height:1.6;color:var(--muted);background:#fff;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4,h5,p,ul{margin:0}
+ul{padding:0}
+button{font:inherit}
+
+.ic{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0;display:inline-block;vertical-align:middle}
+.ic.fill{fill:currentColor;stroke:none}
+
+.container{max-width:1280px;margin:0 auto;padding:0 48px;width:100%}
+.grid-12{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:32px;align-items:center}
+.section{padding:96px 0}
+.serif{font-family:'Playfair Display',Georgia,'Times New Roman',serif}
+
+.eyebrow{font-weight:600;font-size:12px;letter-spacing:1.2px;text-transform:uppercase;color:var(--blue);display:inline-flex;align-items:center;gap:6px}
+.eyebrow.line::before{content:"";width:24px;height:2px;background:var(--blue);display:inline-block}
+.eyebrow.gold{color:var(--gold);letter-spacing:.6px;font-size:12px}
+.h2{font-family:'Playfair Display',Georgia,serif;font-weight:600;font-size:40px;line-height:48px;letter-spacing:-.6px;color:var(--navy-deep)}
+.h2.white{color:#fff}
+.h3{font-family:'Playfair Display',Georgia,serif;font-weight:500;font-size:20px;line-height:27px;color:var(--navy-deep)}
+.body-copy{font-size:15px;line-height:24px;color:var(--muted)}
+.sec-head{max-width:672px;margin:0 auto 40px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:4px}
+.sec-head .h2{margin-top:4px}
+.sec-head p{margin-top:8px;font-size:15px;line-height:24px}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:16px 40px;border-radius:2px;font-weight:600;font-size:14px;letter-spacing:.14px;border:0;cursor:pointer;transition:transform .2s ease,box-shadow .2s ease,background-color .2s ease,opacity .2s;white-space:nowrap;text-align:center}
+.btn:hover{transform:translateY(-1px);box-shadow:0 8px 18px rgba(0,14,31,.18)}
+.btn:disabled{opacity:.6;cursor:not-allowed;transform:none;box-shadow:none}
+.btn-navy{background:var(--navy);color:#fff}
+.btn-soft{background:var(--bg-2);color:var(--navy-deep);padding:16px 24px}
+.btn-gold{background:var(--gold-light);color:#271900;font-weight:700;padding:16px 28px}
+.btn-ghost{background:rgba(255,255,255,.1);color:#fff;padding:16px 24px}
+.btn-sm{padding:8px 24px;font-size:14px}
+.link-arrow{font-weight:600;font-size:14px;color:var(--blue);display:inline-flex;align-items:center;gap:6px}
+.link-arrow:hover{text-decoration:underline}
+
+/* ---------- HEADER ---------- */
+.site-header{position:sticky;top:0;z-index:50;background:#fff;height:80px;box-shadow:0 1px 4px rgba(0,0,0,.04)}
+.nav-wrap{height:100%;display:flex;align-items:center;justify-content:space-between;gap:24px;position:relative}
+.brand{display:flex;align-items:center;gap:8px;flex-shrink:0}
+.logo-mark{width:34px;height:34px;border-radius:3px;background:var(--navy-deep);color:var(--gold);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-weight:600;font-size:16px;letter-spacing:-.3px}
+.brand-text{display:flex;flex-direction:column;line-height:1}
+.brand-name{font-family:'Playfair Display',serif;font-weight:500;font-size:20px;line-height:27px;letter-spacing:-.5px;color:var(--navy-deep)}
+.brand-sub{font-weight:600;font-size:11px;letter-spacing:1.2px;text-transform:uppercase;color:var(--muted);line-height:15.6px;margin-top:0}
+.main-nav{display:flex;gap:24px;height:100%;align-items:center}
+.main-nav a{display:flex;align-items:center;height:80px;font-weight:600;font-size:14px;letter-spacing:.14px;color:var(--muted);position:relative;white-space:nowrap}
+.main-nav a:hover{color:var(--navy-deep)}
+.main-nav a.active{color:var(--navy-deep);font-weight:700;font-size:16px}
+.main-nav a.active::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--gold)}
+.nav-actions{display:flex;align-items:center;gap:16px;flex-shrink:0}
+.icon-btn{width:32px;height:32px;border-radius:12px;background:var(--navy-deep);color:#fff;border:0;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 1px 1px rgba(0,0,0,.05)}
+.icon-btn .ic{width:16px;height:16px}
+.menu-toggle{display:none;background:none;border:0;cursor:pointer;color:var(--navy-deep);padding:6px}
+
+/* ---------- HERO ---------- */
+.hero{position:relative;padding:112px 0;background:#fff;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 14% 6% at 58% 52%,#dce3f0 0,#dce3f0 60%,transparent 62%);opacity:.5;pointer-events:none}
+.hero .container{position:relative;z-index:1}
+.hero-left{grid-column:1/span 7}
+.hero-right{grid-column:8/span 5;position:relative}
+.pill{display:inline-flex;align-items:center;gap:8px;background:var(--blue-tint);padding:6px 16px;border-radius:12px;font-weight:600;font-size:12px;letter-spacing:.6px;text-transform:uppercase;color:var(--muted);box-shadow:0 1px 1px rgba(0,0,0,.05)}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--gold);flex-shrink:0}
+.hero-title{margin-top:16px;font-family:'Playfair Display',Georgia,serif;font-weight:600;font-size:56px;line-height:70px;letter-spacing:-1.12px;color:var(--navy-deep)}
+.hero-title em{font-weight:400;font-style:italic}
+.hero-sub{margin-top:16px;max-width:576px;font-size:18px;line-height:29.7px;color:var(--muted);letter-spacing:-.18px}
+.cta-row{margin-top:32px;display:flex;flex-wrap:wrap;gap:16px;align-items:center}
+.trust-line{margin-top:32px;display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;font-weight:600;font-size:12px;letter-spacing:.72px;color:var(--muted)}
+.trust-line span{display:inline-flex;align-items:center;gap:6px}
+.trust-line .sep{color:var(--line)}
+.trust-line .ic{width:16px;height:16px;color:var(--blue)}
+
+.plate{position:absolute;inset:-29px;background:var(--blue-tint);border-radius:16px;transform:rotate(1deg);z-index:0}
+.hero-card{position:relative;z-index:1;border-radius:8px;overflow:hidden;background:#fff;box-shadow:0 20px 25px -5px rgba(0,0,0,.1),0 8px 10px -6px rgba(0,0,0,.1)}
+.photo-ph{position:relative;width:100%;background:linear-gradient(160deg,#6b7f96 0%,#2d4059 50%,#10243a 100%);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.9);font-family:'Playfair Display',serif;font-weight:600;letter-spacing:2px}
+.hero-card .photo-ph{aspect-ratio:1/1;font-size:80px}
+.photo-caption{position:absolute;left:0;right:0;bottom:0;padding:32px 16px 16px;background:linear-gradient(to top,rgba(0,14,31,.9),rgba(0,14,31,0));color:#fff}
+.photo-caption strong{display:block;font-family:'Playfair Display',serif;font-weight:500;font-size:20px;line-height:27px}
+.photo-caption small{display:block;color:var(--gold);font-weight:600;font-size:12px;letter-spacing:.6px;text-transform:uppercase;line-height:15.6px}
+.badge{position:absolute;z-index:3;display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.95);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);padding:16px;border-radius:4px;max-width:210px;box-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1)}
+.badge .bi{width:36px;height:36px;border-radius:2px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.badge .bi .ic{width:18px;height:18px;color:var(--navy)}
+.badge b{display:block;font-weight:700;font-size:11.2px;line-height:16.8px;letter-spacing:.2px;text-transform:uppercase;color:var(--ink)}
+.badge small{display:block;font-size:11.2px;line-height:16.8px;color:var(--muted)}
+.fb-1{top:-24px;left:-24px}
+.fb-2{top:45%;right:-24px;transform:translateY(-50%)}
+.fb-3{bottom:-24px;left:24px;max-width:240px}
+
+/* ---------- STATS ---------- */
+.stats{background:var(--navy);padding:24px 0}
+.stats .container{display:flex;align-items:flex-end;justify-content:center;gap:24px}
+.stat{flex:1;text-align:center;padding:0 8px;min-width:0}
+.stat + .stat{border-left:1px solid rgba(121,140,166,.2)}
+.stat-num{font-weight:700;font-size:32px;line-height:35px;color:var(--gold);letter-spacing:-.96px}
+.stat-label{margin-top:6px;font-weight:600;font-size:14px;line-height:19.6px;letter-spacing:.7px;text-transform:uppercase;color:#fff}
+.stat-sub{margin-top:4px;font-size:13px;line-height:19.5px;color:var(--slate)}
+
+/* ---------- ABOUT ---------- */
+.about{background:var(--bg);padding:96px 0}
+.about-left{grid-column:1/span 7}
+.about-right{grid-column:8/span 5}
+.about-left .h2{margin-top:16px}
+.about-left .body-copy + .body-copy{margin-top:16px}
+.about-left .body-copy{margin-top:16px}
+.mini-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:32px}
+.mini{background:#fff;padding:16px;border-radius:2px;box-shadow:0 1px 1px rgba(0,0,0,.05)}
+.mini .ic{color:var(--blue);width:20px;height:20px}
+.mini b{display:block;margin-top:12px;font-weight:700;font-size:12px;line-height:15.6px;letter-spacing:.72px;text-transform:uppercase;color:var(--ink)}
+.mini span{display:block;margin-top:4px;font-size:13px;line-height:19.5px;color:var(--muted)}
+.more-link{display:inline-flex;margin-top:32px}
+.cred{background:#fff;border-radius:8px;padding:40px;box-shadow:0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -2px rgba(0,0,0,.1)}
+.cred-bar{width:64px;height:4px;background:var(--gold);border-radius:12px;margin-bottom:16px}
+.cred h3{font-family:'Playfair Display',serif;font-weight:500;font-size:20px;line-height:27px;color:var(--navy-deep)}
+.cred > p{margin-top:16px;font-size:13px;line-height:21px;color:var(--muted)}
+.cred-rows{margin-top:16px;display:grid;gap:8px}
+.cred-row{display:flex;justify-content:space-between;align-items:center;gap:12px;background:var(--bg-2);padding:8px 16px;border-radius:2px}
+.cred-row span{font-size:13px;color:var(--muted)}
+.cred-row b{font-weight:700;font-size:14px;letter-spacing:.14px;color:var(--navy-deep);white-space:nowrap}
+.sign{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-top:24px;padding-top:8px}
+.sign-name{font-family:'Playfair Display',serif;font-style:italic;font-size:22px;line-height:33px;color:var(--blue)}
+.sign small{display:block;margin-top:5px;font-size:11.2px;line-height:16.8px;text-transform:uppercase;color:var(--muted)}
+.sign-ic{width:48px;height:48px;border-radius:12px;background:var(--blue-soft);display:flex;align-items:center;justify-content:center;color:var(--navy-deep)}
+
+/* ---------- SERVICES ---------- */
+.services{background:var(--bg-2);padding:96px 0}
+.svc-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px}
+.svc{position:relative;background:#fff;border-radius:8px;padding:24px;box-shadow:0 1px 2px rgba(0,0,0,.05);overflow:hidden;display:flex;flex-direction:column}
+.svc::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:var(--navy-deep)}
+.svc.alt::before{background:var(--blue)}
+.svc-ic{width:48px;height:48px;border-radius:2px;background:var(--blue-tint);display:flex;align-items:center;justify-content:center;color:var(--navy)}
+.svc-ic .ic{width:22px;height:22px}
+.svc h3{margin-top:13px}
+.svc > p{margin-top:12px;font-size:13px;line-height:19.5px;color:var(--muted)}
+.svc ul{list-style:none;margin-top:13px;display:grid;gap:4px}
+.svc li{display:flex;align-items:center;gap:8px;font-size:13px;line-height:19.5px;color:var(--ink)}
+.svc li .ic{width:14px;height:14px;color:var(--blue)}
+.svc .link-arrow{margin-top:auto;padding-top:24px}
+
+/* ---------- PROCESS ---------- */
+.process{background:var(--bg);padding:96px 0}
+.steps{position:relative;display:flex;gap:32px;justify-content:center;margin-top:0}
+.steps::before{content:"";position:absolute;top:40px;left:12%;right:12%;height:2px;background:rgba(196,198,205,.4)}
+.step{flex:1;min-width:0;display:flex;flex-direction:column;align-items:center;text-align:center;position:relative}
+.step-num{width:80px;height:80px;border-radius:12px;background:#fff;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-weight:700;font-size:20px;color:var(--navy-deep);box-shadow:0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -2px rgba(0,0,0,.1);position:relative;z-index:1}
+.step h3{margin-top:16px}
+.step p{margin-top:8px;font-size:13px;line-height:19.5px;color:var(--muted);padding:0 12px}
+
+/* ---------- DOMAINS ---------- */
+.domains{background:var(--bg);padding:96px 0}
+.dom-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px}
+.dom{background:#fff;border-radius:8px;padding:24px;box-shadow:0 1px 1px rgba(0,0,0,.05)}
+.dom .sq{width:40px;height:40px;border-radius:2px;display:flex;align-items:center;justify-content:center;color:var(--navy)}
+.dom .sq .ic{width:18px;height:18px}
+.dom h3{margin-top:24px}
+.dom p{margin-top:8px;font-size:13px;line-height:19.5px;color:var(--muted)}
+
+/* ---------- ACHIEVEMENTS ---------- */
+.achieve{background:var(--bg-2);padding:80px 0}
+.ach-head{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;flex-wrap:wrap}
+.ach-head .h2{margin-top:12px;max-width:620px}
+.ach-head > p{max-width:448px;font-size:13px;line-height:19.5px;color:var(--muted)}
+.ach-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;margin-top:40px}
+.ach{background:#fff;border-radius:8px;padding:24px;box-shadow:0 1px 1px rgba(0,0,0,.05);display:flex;flex-direction:column;gap:19px}
+.ach-top{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.ach-num{font-weight:700;font-size:32px;line-height:35px;letter-spacing:-.96px;color:var(--navy-deep);white-space:nowrap}
+.ach-top .ic{color:var(--blue);width:20px;height:20px}
+.rule{width:40px;height:2px;background:var(--gold)}
+.ach p{font-size:13px;line-height:19.5px;color:var(--muted)}
+.ach .h3{font-size:20px}
+.ach-stack{display:flex;flex-direction:column;gap:4px}
+
+/* ---------- CONTACT / FORM ---------- */
+.contact{background:var(--navy);padding:96px 0}
+.contact-left{grid-column:1/span 5;align-self:start}
+.contact-card{grid-column:6/span 7;align-self:start;background:#fff;border-radius:8px;padding:40px;box-shadow:0 25px 50px -12px rgba(0,0,0,.25);color:var(--muted)}
+.contact .eyebrow{color:var(--gold);letter-spacing:.6px}
+.contact .eyebrow .ic{width:12px;height:12px}
+.contact .h2{margin-top:16px}
+.lead-dark{margin-top:16px;font-size:18px;line-height:29.25px;color:var(--slate);letter-spacing:-.18px}
+.ethics{margin-top:24px;background:rgba(0,14,31,.4);padding:16px;border-radius:2px}
+.ethics-title{display:flex;align-items:center;gap:8px;color:var(--gold);font-weight:700;font-size:13px;line-height:19.5px}
+.ethics-title .ic{width:16px;height:16px}
+.ethics p{margin-top:8px;font-size:13px;line-height:19.5px;color:var(--slate)}
+.hotline{margin-top:24px}
+.hotline-label{font-weight:600;font-size:12px;letter-spacing:.6px;text-transform:uppercase;color:var(--slate)}
+.hotline-row{display:flex;align-items:center;gap:8px;margin-top:8px}
+.hotline-ic{width:40px;height:40px;border-radius:12px;background:var(--blue);display:flex;align-items:center;justify-content:center;color:#fff}
+.hotline-ic .ic{width:16px;height:16px}
+.hotline-row strong{display:block;font-weight:700;font-size:14px;line-height:19.6px;color:#fff;letter-spacing:.14px}
+.hotline-row small{display:block;font-size:12px;line-height:18px;color:var(--slate)}
+
+.enquiry{display:grid;gap:16px}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.field{display:flex;flex-direction:column;gap:4px;min-width:0}
+.field label{font-weight:600;font-size:12px;line-height:15.6px;letter-spacing:.72px;text-transform:uppercase;color:var(--ink)}
+.field input{width:100%;background:var(--bg);border:0;border-radius:2px;padding:12px 16px;font:inherit;font-size:15px;color:var(--ink);box-shadow:0 1px 2px rgba(0,0,0,.05);outline:none;transition:box-shadow .2s}
+.field input::placeholder{color:#9ca3af;opacity:1}
+.field input:focus{box-shadow:0 0 0 2px var(--blue-soft)}
+.submit-row{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-top:4px}
+.submit-row .btn{padding:16px 40px}
+.privacy{display:flex;align-items:center;gap:8px;font-size:12px;line-height:18px;color:var(--muted)}
+.privacy .ic{width:16px;height:16px;color:var(--gold)}
+.form-status{font-size:14px;line-height:20px;min-height:20px;color:var(--muted)}
+.form-status.ok{color:#1b7f4b;font-weight:600}
+.form-status.err{color:#b3261e;font-weight:600}
+
+/* ---------- WHY US ---------- */
+.why{background:var(--bg);padding:96px 0}
+.why-photo{grid-column:1/span 5;position:relative;border-radius:16px;overflow:hidden;background:var(--blue-tint);box-shadow:0 20px 25px -5px rgba(0,0,0,.1),0 8px 10px -6px rgba(0,0,0,.1)}
+.why-photo .photo-ph{aspect-ratio:4/5;font-size:72px}
+.why-photo .photo-caption{padding:24px}
+.why-photo .photo-caption strong{font-size:20px;line-height:27px}
+.why-right{grid-column:6/span 7}
+.why-right .h2{margin-top:16px}
+.diff-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:32px}
+.diff{display:flex;gap:12px;align-items:flex-start}
+.diff .sq{width:32px;height:32px;background:#e2e8f6;border-radius:2px;display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--navy)}
+.diff .sq .ic{width:16px;height:16px}
+.diff h3{font-family:'Playfair Display',serif;font-weight:500;font-size:17.6px;line-height:26.4px;color:var(--navy-deep)}
+.diff p{margin-top:2px;font-size:13px;line-height:19.5px;color:var(--muted)}
+
+/* ---------- ADVISORY DESK ---------- */
+.advisory{background:#fff;padding:40px 48px}
+.advisory-box{max-width:1184px;margin:0 auto;background:var(--navy-deep);border-radius:16px;padding:40px;box-shadow:0 20px 25px -5px rgba(0,0,0,.1),0 8px 10px -6px rgba(0,0,0,.1)}
+.advisory-box .grid-12{align-items:center}
+.qr-col{grid-column:1/span 4}
+.qr-card{background:#fff;border-radius:8px;padding:16px;text-align:center;box-shadow:0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -2px rgba(0,0,0,.1);max-width:280px;margin:0 auto}
+.qr-ph{width:176px;height:176px;margin:0 auto;border:2px dashed var(--line);border-radius:4px;display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--slate);font-size:12px;line-height:18px;text-align:center;padding:12px}
+.qr-card b{display:block;margin-top:12px;font-weight:700;font-size:12px;line-height:15.6px;letter-spacing:.6px;text-transform:uppercase;color:var(--navy-deep)}
+.qr-card small{display:block;margin-top:8px;font-size:12px;line-height:18px;color:var(--muted)}
+.advisory-col{grid-column:5/span 8}
+.advisory-col .eyebrow{color:var(--gold);letter-spacing:1.2px}
+.advisory-col .h2{margin-top:4px;color:#fff}
+.advisory-col > p{margin-top:16px;font-size:15px;line-height:24px;color:var(--slate)}
+.tiles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:24px}
+.tile{background:var(--navy);padding:8px;border-radius:2px;display:flex;align-items:center;gap:8px;min-height:53.5px}
+.tile > .ic{color:var(--gold);width:18px;height:18px}
+.tile small{display:block;font-weight:700;font-size:12px;line-height:18px;text-transform:uppercase;color:var(--slate)}
+.tile strong{display:block;font-weight:500;font-size:13px;line-height:19.5px;color:#fff}
+.adv-actions{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-top:24px}
+.adv-actions .link-u{font-weight:600;font-size:14px;color:#fff;text-decoration:underline;text-underline-offset:3px}
+
+/* ---------- TESTIMONIALS ---------- */
+.testi{background:var(--bg);padding:96px 0}
+.testi-grid{display:flex;gap:32px;align-items:stretch;margin-top:40px}
+.review{flex:1;min-width:0;background:#fff;border-radius:8px;padding:24px;box-shadow:0 1px 1px rgba(0,0,0,.05);display:flex;flex-direction:column;justify-content:space-between;gap:24px}
+.stars{display:flex;gap:4px;color:var(--gold)}
+.stars .ic{width:15px;height:15px}
+.review blockquote{margin:0}
+.review p{font-size:15px;line-height:24.4px;color:var(--muted)}
+.reviewer{display:flex;gap:8px;align-items:center;padding-top:4px}
+.av{width:40px;height:40px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:16px;color:#2d5781;background:var(--blue-soft);flex-shrink:0}
+.av.alt{background:var(--blue-tint);color:var(--navy-deep)}
+.reviewer b{display:block;font-weight:700;font-size:14px;line-height:19.6px;color:var(--navy-deep);letter-spacing:.14px}
+.reviewer small{display:block;font-size:12px;line-height:18px;color:var(--muted)}
+
+/* ---------- INSIGHTS ---------- */
+.insights{background:var(--bg-2);padding:96px 0}
+.ins-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap}
+.ins-head .eyebrow{margin-bottom:6px}
+.ins-head .h2{margin-top:0}
+.ins-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;margin-top:40px}
+.art{background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 1px 2px rgba(0,0,0,.05);display:flex;flex-direction:column}
+.art-body{padding:24px;display:flex;flex-direction:column;gap:12px;flex:1}
+.art-top{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap}
+.tag{background:var(--blue-tint);padding:2px 8px;border-radius:2px;font-weight:700;font-size:12px;line-height:18px;text-transform:uppercase;color:var(--blue)}
+.meta{font-size:12px;line-height:18px;text-transform:uppercase;color:var(--muted)}
+.art .h3{margin-top:4px}
+.art p.desc{font-size:13px;line-height:19.5px;color:var(--muted)}
+.art .art-link{padding:6px 24px 26px;font-weight:700;font-size:14px;line-height:19.6px;color:var(--blue)}
+.art .art-link:hover{text-decoration:underline}
+
+/* ---------- FAQ ---------- */
+.faq{background:var(--bg);padding:96px 0}
+.faq-wrap{max-width:880px;margin:0 auto;padding:0 24px}
+.faq-list{display:grid;gap:8px;margin-top:40px}
+.faq-item{background:#fff;border-radius:4px;box-shadow:0 1px 2px rgba(0,0,0,.05);overflow:hidden}
+.faq-q{width:100%;background:none;border:0;padding:24px;display:flex;justify-content:space-between;align-items:center;gap:16px;cursor:pointer;font-family:'Playfair Display',serif;font-weight:500;font-size:20px;line-height:27px;color:var(--navy-deep);text-align:left}
+.faq-q .ic{width:16px;height:16px;color:var(--navy-deep);transition:transform .25s ease}
+.faq-item.open .faq-q .ic{transform:rotate(180deg)}
+.faq-a{display:none;padding:0 24px 24px;font-size:15px;line-height:24px;color:var(--muted)}
+.faq-item.open .faq-a{display:block}
+
+/* ---------- CTA BAND ---------- */
+.cta{background:var(--navy);padding:96px 0;text-align:center;position:relative;overflow:hidden}
+.cta::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 8% 4% at 50% 50%,rgba(255,222,169,.12) 0,rgba(255,222,169,.12) 60%,transparent 62%);pointer-events:none}
+.cta .container{position:relative;z-index:1}
+.cta-bar{width:64px;height:4px;background:var(--gold);border-radius:12px;margin:0 auto}
+.cta h2{margin-top:16px;font-family:'Playfair Display',serif;font-weight:600;font-size:56px;line-height:70px;letter-spacing:-1.12px;color:#fff}
+.cta > .container > p{max-width:672px;margin:16px auto 0;font-size:18px;line-height:29.7px;color:var(--slate);letter-spacing:-.18px}
+.cta .cta-row{justify-content:center;margin-top:32px}
+.quick-pill{display:inline-flex;gap:16px;align-items:center;justify-content:center;margin-top:24px;background:rgba(0,14,31,.6);padding:10px 24px;border-radius:12px;font-size:13px;line-height:19.5px;color:#fff;flex-wrap:wrap}
+.quick-pill span{display:inline-flex;align-items:center;gap:6px}
+.quick-pill .ic{width:14px;height:14px;color:var(--gold)}
+.quick-pill .sep{color:rgba(121,140,166,.4)}
+
+/* ---------- FOOTER ---------- */
+.footer{background:var(--navy);padding:40px 0 24px;color:var(--slate)}
+.foot-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:32px;padding-bottom:40px}
+.foot-brand .logo-row{display:flex;align-items:center;gap:8px}
+.foot-brand .logo-mark{background:#fff;color:var(--navy-deep);width:32px;height:32px}
+.foot-brand h4{font-family:'Playfair Display',serif;font-weight:500;font-size:20px;line-height:27px;color:#fff}
+.foot-brand p{margin-top:24px;font-size:13px;line-height:21px;color:var(--slate)}
+.foot-gold{display:flex;align-items:center;gap:6px;margin-top:16px;color:var(--gold);font-weight:600;font-size:12px;line-height:15.6px;letter-spacing:.72px;text-transform:uppercase}
+.foot-gold .ic{width:16px;height:16px}
+.foot-col h5{margin:0 0 16px;font-weight:600;font-size:12px;line-height:15.6px;letter-spacing:1.2px;text-transform:uppercase;color:#fff}
+.foot-col ul{list-style:none;display:grid;gap:3px}
+.foot-col li{font-size:13px;line-height:19.5px}
+.foot-col li a:hover{color:#fff}
+.foot-col.contact li{display:flex;gap:8px;align-items:flex-start}
+.foot-col.contact .ic{width:16px;height:16px;color:var(--gold);margin-top:2px}
+.foot-bottom{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;padding:24px 0 16px}
+.foot-bottom p{font-weight:600;font-size:12px;line-height:15.6px;letter-spacing:.72px;color:var(--slate)}
+.foot-links{display:flex;gap:24px;flex-wrap:wrap}
+.foot-links a{font-weight:600;font-size:12px;line-height:15.6px;letter-spacing:.72px;color:var(--slate)}
+.foot-links a:hover{color:#fff}
+.disclaimer{background:rgba(0,14,31,.2);padding:16px;border-radius:2px;font-size:12px;line-height:19.5px;color:rgba(121,140,166,.8);text-align:justify}
+.disclaimer strong{color:var(--gold);font-weight:700}
+
+/* ---------- FLOATING WHATSAPP PILL ---------- */
+.wa-float{position:fixed;right:24px;bottom:24px;z-index:60;display:flex;align-items:center;gap:8px;background:#fff;padding:8px 16px 8px 8px;border-radius:12px;box-shadow:0 10px 25px -5px rgba(16,36,58,.18)}
+.wa-float .wa-ic{width:32px;height:32px;border-radius:12px;background:var(--blue-soft);display:flex;align-items:center;justify-content:center;color:var(--navy-deep)}
+.wa-float .wa-ic .ic{width:16px;height:16px}
+.wa-float b{display:block;font-weight:600;font-size:12px;line-height:15.6px;letter-spacing:.72px;text-transform:uppercase;color:var(--ink)}
+.wa-float small{display:block;font-size:13px;line-height:19.5px;color:var(--muted)}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width:1180px){
+  .menu-toggle{display:inline-flex}
+  .main-nav{display:none;position:absolute;top:80px;left:0;right:0;background:#fff;flex-direction:column;align-items:stretch;gap:0;padding:8px 24px 16px;box-shadow:0 12px 24px rgba(0,0,0,.08);height:auto}
+  .main-nav.open{display:flex}
+  .main-nav a{height:auto;padding:12px 0;border-bottom:1px solid var(--bg-2)}
+  .main-nav a.active::after{display:none}
+  .main-nav a.active{color:var(--gold);}
+  .nav-actions .icon-btn{display:none}
+}
+@media (max-width:1100px){
+  .container{padding:0 32px}
+  .grid-12 > *{grid-column:1/-1 !important}
+  .hero{padding:88px 0}
+  .hero-title{font-size:48px;line-height:60px}
+  .hero-right{max-width:520px;width:100%;margin:24px auto 0}
+  .about-right{max-width:620px;width:100%;margin:0 auto}
+  .contact-card{max-width:720px;width:100%;margin:0 auto}
+  .contact-left{max-width:720px}
+  .why-photo{max-width:520px;width:100%;margin:0 auto}
+  .why-right{max-width:720px}
+  .qr-card{max-width:320px}
+  .svc-grid,.dom-grid,.ins-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .ach-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .testi-grid{flex-direction:column}
+  .steps{flex-wrap:wrap;gap:40px 24px}
+  .steps::before{display:none}
+  .step{flex:0 0 calc(50% - 12px)}
+  .foot-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .stats .container{flex-wrap:wrap;gap:24px 0}
+  .stat{flex:0 0 50%}
+  .stat:nth-child(odd){border-left:0}
+  .stat:nth-child(n+3){margin-top:0}
+  .cta h2{font-size:44px;line-height:54px}
+  .h2{font-size:34px;line-height:42px}
+  .advisory{padding:32px 24px}
+  .advisory-box{padding:32px 24px}
+  .qr-col{margin:0 auto}
+  .faq-wrap{padding:0 16px}
+}
+@media (max-width:760px){
+  .container{padding:0 20px}
+  .site-header{height:72px}
+  .main-nav{top:72px}
+  .main-nav a{height:auto}
+  .brand-name{font-size:18px;line-height:24px}
+  .btn-navy.btn-sm{display:none}
+  .section,.about,.services,.process,.domains,.contact,.why,.testi,.insights,.faq,.cta{padding:72px 0}
+  .achieve{padding:64px 0}
+  .hero{padding:64px 0}
+  .hero-title{font-size:40px;line-height:50px;letter-spacing:-.6px}
+  .hero-sub{font-size:16px;line-height:26px}
+  .cta-row{flex-direction:column;align-items:stretch}
+  .cta-row .btn{width:100%}
+  .trust-line{gap:8px 12px}
+  .plate{inset:-12px}
+  .badge{max-width:190px;padding:12px}
+  .fb-1{top:-16px;left:0}
+  .fb-2{right:0}
+  .fb-3{left:0;bottom:-16px;max-width:210px}
+  .mini-cards{grid-template-columns:1fr}
+  .cred,.contact-card{padding:24px}
+  .sign-name{font-size:20px}
+  .h2{font-size:30px;line-height:38px}
+  .h2.white{font-size:30px}
+  .cta h2{font-size:36px;line-height:44px;letter-spacing:-.6px}
+  .lead-dark{font-size:16px;line-height:26px}
+  .svc-grid,.dom-grid,.ins-grid,.ach-grid,.foot-grid,.two-col,.tiles,.diff-grid{grid-template-columns:1fr}
+  .step{flex:0 0 100%}
+  .ach-head{align-items:flex-start}
+  .submit-row{flex-direction:column;align-items:stretch}
+  .submit-row .btn{width:100%}
+  .stat{flex:0 0 50%}
+  .stat-num{font-size:28px}
+  .stat-label{font-size:12px;letter-spacing:.5px}
+  .faq-q{font-size:18px;line-height:24px;padding:20px}
+  .faq-a{padding:0 20px 20px}
+  .wa-float{right:16px;bottom:16px}
+  .foot-bottom{flex-direction:column;align-items:flex-start}
+  .advisory-box{border-radius:12px}
+  .quick-pill{flex-direction:column;gap:8px;border-radius:12px}
+  .quick-pill .sep{display:none}
+  .wa-float small{font-size:12px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none !important}
+}
+</style>
+</head>
+<body id="top">
+
+<!-- ================= ICON SPRITE ================= -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></symbol>
+    <symbol id="i-check-circle" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21v-1a6 6 0 0 1 6-6h4a6 6 0 0 1 6 6v1"/></symbol>
+    <symbol id="i-doc" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h8"/></symbol>
+    <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.5 13 17 22l-5-3-5 3 1.5-9"/></symbol>
+    <symbol id="i-trend" viewBox="0 0 24 24"><path d="m22 7-8.5 8.5-5-5L2 17"/><path d="M16 7h6v6"/></symbol>
+    <symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></symbol>
+    <symbol id="i-bank" viewBox="0 0 24 24"><path d="M3 21h18M3 10h18M5 6l7-3 7 3M4 10v11M20 10v11M8 14v3M12 14v3M16 14v3"/></symbol>
+    <symbol id="i-receipt" viewBox="0 0 24 24"><path d="M5 2v20l2-1.5L9 22l2-1.5L13 22l2-1.5L17 22l2-1.5V2l-2 1.5L15 2l-2 1.5L11 2 9 3.5 7 2z"/><path d="M9 8h6M9 12h6M9 16h4"/></symbol>
+    <symbol id="i-wallet" viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="14" rx="2"/><path d="M6 6V4h12M16 13h2"/></symbol>
+    <symbol id="i-table" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18M9 3v18"/></symbol>
+    <symbol id="i-building" viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M9 22v-4h6v4M8 6h2M14 6h2M8 10h2M14 10h2M8 14h2M14 14h2"/></symbol>
+    <symbol id="i-factory" viewBox="0 0 24 24"><path d="M2 20V9l6 4V9l6 4V5h8v15z"/><path d="M2 20h20"/></symbol>
+    <symbol id="i-store" viewBox="0 0 24 24"><path d="M3 9l1-5h16l1 5"/><path d="M3 9v11h18V9"/><path d="M3 9a3 3 0 0 0 6 0 3 3 0 0 0 6 0 3 3 0 0 0 6 0"/></symbol>
+    <symbol id="i-monitor" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></symbol>
+    <symbol id="i-plus-square" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M12 8v8M8 12h8"/></symbol>
+    <symbol id="i-rocket" viewBox="0 0 24 24"><path d="M4.5 16.5c-1.5 1.3-2 5.5-2 5.5s4.2-.5 5.5-2c.8-.9.8-2.3 0-3.1-.9-.9-2.3-.9-3.5-.4z"/><path d="M12 15l-3-3a22 22 0 0 1 2-3.9A12.9 12.9 0 0 1 22 2c0 2.7-.6 6.3-4.1 9.8A22 22 0 0 1 14 13.9z"/><circle cx="16" cy="8" r="1.5"/></symbol>
+    <symbol id="i-hourglass" viewBox="0 0 24 24"><path d="M6 2h12M6 22h12M7 2c0 5 5 6 5 10s-5 5-5 10M17 2c0 5-5 6-5 10s5 5 5 10"/></symbol>
+    <symbol id="i-user-check" viewBox="0 0 24 24"><circle cx="9" cy="7" r="4"/><path d="M2 21v-2a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v2M16 11l2 2 4-4"/></symbol>
+    <symbol id="i-pen" viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"/></symbol>
+  </defs>
+</svg>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a href="#top" class="brand" aria-label="Kapoor and Associates home">
+      <span class="logo-mark" aria-hidden="true">K</span>
+      <span class="brand-text">
+        <span class="brand-name">Kapoor &amp;<br>Associates</span>
+        <span class="brand-sub">Chartered<br>Accountants</span>
+      </span>
+    </a>
+
+    <nav class="main-nav" id="mainNav" aria-label="Primary">
+      <a href="#top" class="active">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#services">Services</a>
+      <a href="#achievements">Our Achievements</a>
+      <a href="#testimonials">Client Testimonials</a>
+      <a href="#insights">Insights</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="#contact" class="btn btn-navy btn-sm">Schedule a Consultation</a>
+      <button class="icon-btn" type="button" aria-label="Client login"><svg class="ic" viewBox="0 0 24 24"><use href="#i-user"/></svg></button>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-controls="mainNav" aria-expanded="false"><svg class="ic" viewBox="0 0 24 24"><use href="#i-menu"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="hero">
+  <div class="container grid-12">
+    <div class="hero-left">
+      <span class="pill"><span class="dot" aria-hidden="true"></span>Chartered Accountants • Audit • Taxation • Advisory</span>
+      <h1 class="hero-title serif">Financial Clarity.<br><em>Professional Integrity.</em><br>Business Confidence.</h1>
+      <p class="hero-sub">Your trusted fiduciary partner in statutory auditing, GST governance, direct taxation, and strategic financial restructuring. We deliver practical solutions grounded in regulatory precision and personal partner attention.</p>
+
+      <div class="cta-row">
+        <a href="#contact" class="btn btn-navy">Book a Consultation <svg class="ic" viewBox="0 0 24 24" style="width:16px;height:16px"><use href="#i-arrow"/></svg></a>
+        <!-- Free audit for ₹1 - pays via UPI (opens the UPI app on phones) -->
+        <a id="payBtn" class="btn btn-gold" href="upi://pay?pa=vparthidr-2@okhdfcbank&amp;pn=Kapoor%20%26%20Associates&amp;am=1&amp;cu=INR&amp;tn=Free%20Audit">Free Audit for ₹1</a>
+        <a href="#services" class="btn btn-soft">Explore Our Services</a>
+      </div>
+
+      <div class="trust-line">
+        <span><svg class="ic" viewBox="0 0 24 24"><use href="#i-shield"/></svg>Professional Guidance</span>
+        <span class="sep">•</span>
+        <span><svg class="ic" viewBox="0 0 24 24"><use href="#i-eye"/></svg>Transparent Approach</span>
+        <span class="sep">•</span>
+        <span><svg class="ic" viewBox="0 0 24 24"><use href="#i-award"/></svg>Reliable Support</span>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="plate" aria-hidden="true"></div>
+      <div class="hero-card">
+        <!-- Replace this placeholder with: <img src="partner.jpg" alt="CA. Rajesh Kapoor" style="width:100%;aspect-ratio:1/1;object-fit:cover"> -->
+        <div class="photo-ph" role="img" aria-label="Photo of CA. Rajesh Kapoor">RK</div>
+        <div class="photo-caption">
+          <strong>CA. Rajesh Kapoor</strong>
+          <small>FCA, DISA (ICAI) • Managing Partner</small>
+        </div>
+      </div>
+
+      <div class="badge fb-1">
+        <div class="bi" style="background:#d1e4ff"><svg class="ic" viewBox="0 0 24 24"><use href="#i-doc"/></svg></div>
+        <div><b>Audit &amp; Assurance</b><small>ICAI Compliant Standards</small></div>
+      </div>
+      <div class="badge fb-2">
+        <div class="bi" style="background:#e2e8f6"><svg class="ic" viewBox="0 0 24 24"><use href="#i-check-circle"/></svg></div>
+        <div><b>GST Compliance</b><small>100% Timely Filing Record</small></div>
+      </div>
+      <div class="badge fb-3">
+        <div class="bi" style="background:#ffdea9"><svg class="ic" viewBox="0 0 24 24"><use href="#i-trend"/></svg></div>
+        <div><b>Corporate Advisory</b><small>Strategic Wealth &amp; Tax Structuring</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= STATS ================= -->
+<section class="stats" aria-label="Firm statistics">
+  <div class="container">
+    <div class="stat">
+      <div class="stat-num">500+</div>
+      <div class="stat-label">Happy Clients</div>
+      <div class="stat-sub">Retainer &amp; Advisory Portfolios</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">25+</div>
+      <div class="stat-label">Years Practice</div>
+      <div class="stat-sub">Led by Senior FCA Partners</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">1,200+</div>
+      <div class="stat-label">Audit Assignments</div>
+      <div class="stat-sub">Statutory, Internal &amp; Tax Audits</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">3,500+</div>
+      <div class="stat-label">GST &amp; Tax Filings</div>
+      <div class="stat-sub">Corporate &amp; High Net Individuals</div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="about" id="about">
+  <div class="container grid-12">
+    <div class="about-left">
+      <span class="eyebrow line">About Our Firm</span>
+      <h2 class="h2 serif">More Than Compliance. A Commitment to Your Financial Growth.</h2>
+      <p class="body-copy">Established over two decades ago in the central commercial district of New Delhi, Kapoor &amp; Associates represents a synthesis of traditional fiduciary integrity and modern financial technology. We act as strategic advisors rather than mere filing agents, ensuring that businesses stay resilient in the face of continuous regulatory transformation.</p>
+      <p class="body-copy">Our firm is headed by senior Fellow Chartered Accountants (FCAs) with specialized credentials in Information Systems Audit (DISA) and International Taxation. We maintain ICAI peer-review certification, operating under strict independence standards and meticulous workpaper documentation protocols.</p>
+
+      <div class="mini-cards">
+        <div class="mini">
+          <svg class="ic" viewBox="0 0 24 24"><use href="#i-check-circle"/></svg>
+          <b>Fellow ICAI (FCA)</b>
+          <span>Senior leadership credentials</span>
+        </div>
+        <div class="mini">
+          <svg class="ic" viewBox="0 0 24 24"><use href="#i-shield"/></svg>
+          <b>Peer Reviewed</b>
+          <span>Standardized ICAI audit trails</span>
+        </div>
+        <div class="mini">
+          <svg class="ic" viewBox="0 0 24 24"><use href="#i-lock"/></svg>
+          <b>100% Confidential</b>
+          <span>Bank-grade data protocols</span>
+        </div>
+      </div>
+
+      <a href="#contact" class="link-arrow more-link">Know More About Our Chambers <svg class="ic" viewBox="0 0 24 24" style="width:15px;height:15px"><use href="#i-arrow"/></svg></a>
+    </div>
+
+    <div class="about-right">
+      <div class="cred">
+        <div class="cred-bar" aria-hidden="true"></div>
+        <h3>Institutional Accreditation &amp; Governance</h3>
+        <p>Every audit assignment, direct tax filing, and appellate submission is rigorously countersigned by verified partners subject to continuous professional education criteria.</p>
+        <div class="cred-rows">
+          <div class="cred-row"><span>ICAI Firm Reg. No:</span><b>014822N</b></div>
+          <div class="cred-row"><span>Peer Review Certificate:</span><b>PRC-018449 / Active</b></div>
+          <div class="cred-row"><span>Chambers Established:</span><b>1998 (25+ Yrs)</b></div>
+        </div>
+        <div class="sign">
+          <div>
+            <div class="sign-name">Rajesh Kapoor</div>
+            <small>Senior Partner, Kapoor &amp; Associates</small>
+          </div>
+          <div class="sign-ic"><svg class="ic" viewBox="0 0 24 24"><use href="#i-pen"/></svg></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="sec-head">
+      <span class="eyebrow">What We Do</span>
+      <h2 class="h2 serif">Comprehensive Financial &amp;<br>Professional Services</h2>
+      <p>End-to-end statutory and advisory solutions engineered to insulate risk and promote sustainable enterprise expansion.</p>
+    </div>
+
+    <div class="svc-grid">
+      <article class="svc">
+        <div class="svc-ic"><svg class="ic" viewBox="0 0 24 24"><use href="#i-bank"/></svg></div>
+        <h3 class="h3 serif">Audit &amp; Assurance</h3>
+        <p>Rigorous statutory validation providing investors, stakeholders, and banking partners absolute trust in your statements.</p>
+        <ul>
+          <li><svg class="ic" viewBox="0 0 24 24"><use href="#i-check-circle"/></svg>Statutory Company Audits</li>
+          <li><svg class="ic" viewBox="0 0 24 24"><use href="#i-check-circle"/></svg>Internal Risk &amp; Controls Audit</li>
+          <li><svg class="ic" viewBox="0 0 24 24"><use href="#i-check-circle"/></svg>Income Tax Audits (Sec 44AB)</li>
+          <li><svg class="ic" viewBox="0 0 24 24"><use href="#i-check-circle"/></svg>Financial Statement Attestation</li>
+        </ul>
+        <a href="#contact" class="link-arrow">Explore Service →</a>
+      </article>
+
+      <article class="svc alt">
+        <div class="svc-ic"><svg class="ic" viewBox="0 0 24 24"><use href="#i-receipt"/></svg></div>
+        <h3 class="h3 serif">GST Services</h3>
+        <p>Complete indirect tax lifecycle management, ITC reconciliation, and representation before GST department tribunals.</p>
+        <ul>
+          <li><svg class="ic" viewBox="0 0 24 24"><use href="#i-check-circle"/></svg>GST Registration &amp; Migration</li>
+          <li><svg class="ic" viewBox="0 0 24 24"><use href="#i-check-circle"/></svg>Monthly/Quarterly Returns (GSTR 1/3B)</li>
+          <li><svg class="ic" viewBox="0 0 24 24"><use href="#i-check-circle"/></svg>Annual Return &amp; Reconciliation (9 &amp; 9C)</li>
+          <li><svg class="ic" viewBox="0 0 24 24"><use href="#i-check-circle"/></svg>ASMT-10 Notice Defense &amp; Appeals</li>
+        </ul>
+        <a href="#contact" class="link-arrow">Explore Service →</a>
+      </article>
+
+      <article class="svc">
+        <div class="svc-ic"><svg class="ic" viewBox="0 0 24 24"><use href="#i-wallet"/></svg></div>
+        <h3 class="h3 serif">Income Tax &amp; Taxation</h3>
+        <p>Proactive corporate and high-net-worth tax planning to legally minimize tax outflows while maintaining unimpeachable reporting.</p>
+        <ul>
+          <li><svg class="ic" viewBox="0 0 24 24"><use href="#i-check-circle"/></svg>Corporate &amp; Individual ITR Filings</li>
+          <li><svg class="ic" viewBox="0 0 24 24"><use href="#i-check-circle"/></svg>Tax Planning &amp; Wealth Structuring</li>
+          <li><svg class="ic" viewBox="0 0 24 24"><use href="#i-check-circle"/></svg>TDS / TCS Compliance &amp; Certifications</li>
+          <li><svg class="ic" viewBox="0 0 24 24"><use href="#i-check-circle"/></svg>Faceless Assessment Representations</li>
+        </ul>
+        <a href="#contact" class="link-arrow">Explore Service →</a>
+      </article>
+
+      <article class="svc alt">
+        <div class="svc-ic"><svg class="ic" viewBox="0 0 24 24"><use href="#i-table"/></svg></div>
+        <h3 class="h3 serif">Accounting &amp; Bookkeeping</h3>
+        <p>Modern cloud accounting ledgers giving leadership live visibility into operating margins, cash burn, and working capital.</p>
+        <ul>
+          <li><svg class="ic" viewBox="0 0 24 24"><use href="#i-check-circle"/></svg>Cloud Bookkeeping (Tally / Zoho / QuickBooks)</li>
+          <li><svg class="ic" viewBox="0 0 24 24"><use href="#i-check-circle"/></svg>Monthly Financial P&amp;L &amp; Balance Sheets</li>
+          <li><svg class="ic" viewBox="0 0 24 24"><use href="#i-check-circle"/></svg>Automated Bank &amp; Vendor Reconciliation</li>
+          <li><svg class="ic" viewBox="0 0 24 24"><use href="#i-check-circle"/></svg>Executive MIS Dashboards &amp; KPIs</li>
+        </ul>
+        <a href="#contact" class="link-arrow">Explore Service →</a>
+      </article>
+
+      <article class="svc">
+        <div class="svc-ic"><svg class="ic" viewBox="0 0 24 24"><use href="#i-building"/></svg></div>
+        <h3 class="h3 serif">Business Compliance</h3>
+        <p>Corporate secretarial and Ministry of Corporate Affairs (MCA) lifecycles handled with ironclad procedural accuracy.</p>
+        <ul>
+          <li><svg class="ic" viewBox="0 0 24 24"><use href="#i-check-circle"/></svg>Pvt Ltd &amp; LLP Inception / Structuring</li>
+          <li><svg class="ic" viewBox="0 0 24 24"><use href="#i-check-circle"/></svg>Annual ROC Filings (AOC-4, MGT-7)</li>
+          <li><svg class="ic" viewBox="0 0 24 24"><use href="#i-check-circle"/></svg>Director KYC &amp; Secretarial Registers</li>
+          <li><svg class="ic" viewBox="0 0 24 24"><use href="#i-check-circle"/></svg>FEMA &amp; RBI Inward Remittance Filings</li>
+        </ul>
+        <a href="#contact" class="link-arrow">Explore Service →</a>
+      </article>
+
+      <article class="svc alt">
+        <div class="svc-ic"><svg class="ic" viewBox="0 0 24 24"><use href="#i-trend"/></svg></div>
+        <h3 class="h3 serif">Financial Advisory</h3>
+        <p>Transaction advisory, valuation dossiers, and investor-ready projection reports for scaling entities.</p>
+        <ul>
+          <li><svg class="ic" viewBox="0 0 24 24"><use href="#i-check-circle"/></svg>Bank CMA Data &amp; Project Financing</li>
+          <li><svg class="ic" viewBox="0 0 24 24"><use href="#i-check-circle"/></svg>M&amp;A Financial Due Diligence</li>
+          <li><svg class="ic" viewBox="0 0 24 24"><use href="#i-check-circle"/></svg>DCF &amp; NAV Business Valuations</li>
+          <li><svg class="ic" viewBox="0 0 24 24"><use href="#i-check-circle"/></svg>Virtual CFO Strategic Retainer</li>
+        </ul>
+        <a href="#contact" class="link-arrow">Explore Service →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROCESS ================= -->
+<section class="process" aria-labelledby="process-title">
+  <div class="container">
+    <div class="sec-head">
+      <span class="eyebrow">How We Work</span>
+      <h2 class="h2 serif" id="process-title">A Clear Process. A Professional Experience.</h2>
+      <p>We strip complexity from regulatory deadlines through a systematic 4-tier engagement methodology.</p>
+    </div>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">01</div>
+        <h3 class="h3 serif">Understand Scoping</h3>
+        <p>Detailed preliminary interview to catalog entity structure, prior year filings, and specific compliance mandates.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">02</div>
+        <h3 class="h3 serif">Review Documents</h3>
+        <p>Exchange ledgers via encrypted repositories. Systematic checklist verification identifying prior gap items.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">03</div>
+        <h3 class="h3 serif">Rigorous Execution</h3>
+        <p>Application of ICAI auditing standards, cross-checking 26AS/AIS, and dual partner sign-off verification.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">04</div>
+        <h3 class="h3 serif">Filing &amp; Ongoing</h3>
+        <p>Timely portal submissions, transmission of certified acknowledgments, and proactive fiscal alerts year-round.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= DOMAINS ================= -->
+<section class="domains" aria-labelledby="domains-title">
+  <div class="container">
+    <div class="sec-head">
+      <span class="eyebrow">Domain Experience</span>
+      <h2 class="h2 serif" id="domains-title">Professional Support Across Diverse Industries</h2>
+      <p>Regulatory acumen refined by twenty-five years of deep immersion across varied commercial sectors.</p>
+    </div>
+
+    <div class="dom-grid">
+      <div class="dom">
+        <div class="sq" style="background:#a5ccfd"><svg class="ic" viewBox="0 0 24 24"><use href="#i-factory"/></svg></div>
+        <h3 class="h3 serif">Manufacturing &amp; Heavy Industry</h3>
+        <p>Factory cost audits, supply-chain input tax credit reconciliations, export incentives under foreign trade policy.</p>
+      </div>
+      <div class="dom">
+        <div class="sq" style="background:#e2e8f6"><svg class="ic" viewBox="0 0 24 24"><use href="#i-store"/></svg></div>
+        <h3 class="h3 serif">Trading, FMCG &amp; Retail</h3>
+        <p>Omnichannel inventory valuations, high-frequency GST invoicing workflows, and distributor credit compliance.</p>
+      </div>
+      <div class="dom">
+        <div class="sq" style="background:#a5ccfd"><svg class="ic" viewBox="0 0 24 24"><use href="#i-monitor"/></svg></div>
+        <h3 class="h3 serif">Information Technology &amp; SaaS</h3>
+        <p>Cross-border software transfer pricing, STPI compliance, Angel tax provisions, and US/EU client withholding taxes.</p>
+      </div>
+      <div class="dom">
+        <div class="sq" style="background:#e2e8f6"><svg class="ic" viewBox="0 0 24 24"><use href="#i-plus-square"/></svg></div>
+        <h3 class="h3 serif">Healthcare &amp; Diagnostics</h3>
+        <p>Clinical setup funding reports, exempt/taxable hospital service splits under GST, and doctor remuneration TDS structure.</p>
+      </div>
+      <div class="dom">
+        <div class="sq" style="background:#a5ccfd"><svg class="ic" viewBox="0 0 24 24"><use href="#i-rocket"/></svg></div>
+        <h3 class="h3 serif">Startups &amp; Entrepreneurs</h3>
+        <p>DPIIT recognitions, Section 80-IAC tax holiday filing, ESOP pool valuations, and venture debt covenant tracking.</p>
+      </div>
+      <div class="dom">
+        <div class="sq" style="background:#e2e8f6"><svg class="ic" viewBox="0 0 24 24"><use href="#i-briefcase"/></svg></div>
+        <h3 class="h3 serif">Professional Services &amp; Consulting</h3>
+        <p>Presumptive tax schemes (44ADA), service export LUT generation, and partner profit allocations.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ACHIEVEMENTS ================= -->
+<section class="achieve" id="achievements">
+  <div class="container">
+    <div class="ach-head">
+      <div>
+        <span class="eyebrow">Our Achievements</span>
+        <h2 class="h2 serif">Built on Expertise. Strengthened by Trust.</h2>
+      </div>
+      <p>Measurable milestones documenting a quarter-century of uncompromising fidelity to regulatory standards and client prosperity.</p>
+    </div>
+
+    <div class="ach-grid">
+      <div class="ach">
+        <div class="ach-top"><span class="ach-num">99.4%</span><svg class="ic" viewBox="0 0 24 24"><use href="#i-check-circle"/></svg></div>
+        <div class="rule"></div>
+        <h3 class="h3 serif">Statutory On-Time Rate</h3>
+        <p>Zero default penalties recorded across corporate statutory mandates over 5 fiscal cycles.</p>
+      </div>
+      <div class="ach">
+        <div class="ach-top"><span class="ach-num">₹450+ Cr</span><svg class="ic" viewBox="0 0 24 24"><use href="#i-wallet"/></svg></div>
+        <div class="rule"></div>
+        <h3 class="h3 serif">Advisory Portfolio</h3>
+        <p>Structured working capital, syndicated debt syndication, and private equity transaction attestations.</p>
+      </div>
+      <div class="ach">
+        <div class="ach-top"><span class="ach-num">25+ Yrs</span><svg class="ic" viewBox="0 0 24 24"><use href="#i-hourglass"/></svg></div>
+        <div class="rule"></div>
+        <h3 class="h3 serif">Continuous Practice</h3>
+        <p>Steadfast fiduciary legacy servicing second-generation business leaders across North India.</p>
+      </div>
+      <div class="ach">
+        <div class="ach-top"><span class="ach-num">100%</span><svg class="ic" viewBox="0 0 24 24"><use href="#i-shield"/></svg></div>
+        <div class="rule"></div>
+        <h3 class="h3 serif">ICAI Peer Reviewed</h3>
+        <p>Highest grade audit-trail adherence assessed by the Quality Review Board of ICAI.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT / ENQUIRY FORM ================= -->
+<section class="contact" id="contact" aria-labelledby="contact-title">
+  <div class="container grid-12">
+    <div class="contact-left">
+      <span class="eyebrow gold"><svg class="ic" viewBox="0 0 24 24"><use href="#i-lock"/></svg>Confidential Consultation</span>
+      <h2 class="h2 white serif" id="contact-title">Let's Understand Your<br>Business Requirements.</h2>
+      <p class="lead-dark">Every business has distinct compliance cycles and strategic capital structures. Share your details so our partners can formulate a tailored scope of engagement.</p>
+
+      <div class="ethics">
+        <div class="ethics-title"><svg class="ic" viewBox="0 0 24 24"><use href="#i-shield"/></svg>ICAI Ethics Compliant</div>
+        <p>Your contact and commercial data will be guarded under strict statutory privilege. We do not share records with any third-party entities.</p>
+      </div>
+
+      <div class="hotline">
+        <div class="hotline-label">Prefer an instant discussion?</div>
+        <div class="hotline-row">
+          <span class="hotline-ic"><svg class="ic" viewBox="0 0 24 24"><use href="#i-phone"/></svg></span>
+          <div>
+            <strong>+91 (011) 2341 8900</strong>
+            <small>Partner Direct Line (Connaught Place Chambers)</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-card">
+      <form id="enquiryForm" class="enquiry" novalidate>
+        <div class="field">
+          <label for="fName">Full Name *</label>
+          <input id="fName" name="name" type="text" placeholder="e.g. Vikramaditya Singhania" autocomplete="name" required>
+        </div>
+        <div class="two-col">
+          <div class="field">
+            <label for="fPhone">Mobile / Direct Phone *</label>
+            <input id="fPhone" name="phone" type="tel" placeholder="+91 98110 00000" autocomplete="tel" inputmode="tel" pattern="[+0-9 ()\-]{7,20}" required>
+          </div>
+          <div class="field">
+            <label for="fEmail">Corporate Email Address *</label>
+            <input id="fEmail" name="email" type="email" placeholder="director@company.com" autocomplete="email" required>
+          </div>
+        </div>
+
+        <div class="submit-row">
+          <button id="submitBtn" class="btn btn-navy" type="submit">Submit Your Enquiry →</button>
+          <p class="privacy"><svg class="ic" viewBox="0 0 24 24"><use href="#i-shield"/></svg>Protected by Attorney-Client Standard Privilege</p>
+        </div>
+        <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WHY US ================= -->
+<section class="why" aria-labelledby="why-title">
+  <div class="container grid-12">
+    <div class="why-photo">
+      <!-- Replace this placeholder with: <img src="consultation.jpg" alt="Chartered accountant reviewing balance sheets with a client" style="width:100%;aspect-ratio:4/5;object-fit:cover"> -->
+      <div class="photo-ph" role="img" aria-label="Consultation photo placeholder">KA</div>
+      <div class="photo-caption">
+        <small>Uncompromising Confidentiality</small>
+        <strong>Direct Partner Involvement On Every Key Docket.</strong>
+      </div>
+    </div>
+
+    <div class="why-right">
+      <span class="eyebrow">The Institutional Advantage</span>
+      <h2 class="h2 serif" id="why-title">Why Discerning Enterprises Rely On Kapoor &amp; Associates</h2>
+
+      <div class="diff-grid">
+        <div class="diff">
+          <span class="sq"><svg class="ic" viewBox="0 0 24 24"><use href="#i-award"/></svg></span>
+          <div><h3>Professional Expertise</h3><p>Chartered Accountants with deep institutional insights across evolving tax codes.</p></div>
+        </div>
+        <div class="diff">
+          <span class="sq"><svg class="ic" viewBox="0 0 24 24"><use href="#i-user-check"/></svg></span>
+          <div><h3>Personalised Attention</h3><p>Dedicated senior partner oversight. You speak directly to the sign-off authority, not juniors.</p></div>
+        </div>
+        <div class="diff">
+          <span class="sq"><svg class="ic" viewBox="0 0 24 24"><use href="#i-clock"/></svg></span>
+          <div><h3>Timely Execution</h3><p>Systematic milestone adherence ensuring returns are lodged days ahead of statutory cutoffs.</p></div>
+        </div>
+        <div class="diff">
+          <span class="sq"><svg class="ic" viewBox="0 0 24 24"><use href="#i-chat"/></svg></span>
+          <div><h3>Transparent Billing</h3><p>Completely pre-agreed retainer schedules and scope letters. Absolutely zero disguised charges.</p></div>
+        </div>
+        <div class="diff">
+          <span class="sq"><svg class="ic" viewBox="0 0 24 24"><use href="#i-lock"/></svg></span>
+          <div><h3>Bank-Grade Confidentiality</h3><p>Physical file vaults and 256-bit encrypted digital repositories safeguarding sensitive financials.</p></div>
+        </div>
+        <div class="diff">
+          <span class="sq"><svg class="ic" viewBox="0 0 24 24"><use href="#i-hourglass"/></svg></span>
+          <div><h3>Long-Term Relationships</h3><p>Proactive fiscal planning and continuous year-round guidance far beyond annual tax day.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ADVISORY DESK ================= -->
+<section class="advisory" aria-label="Advisory desk">
+  <div class="advisory-box">
+    <div class="grid-12">
+      <div class="qr-col">
+        <div class="qr-card">
+          <!-- Replace this box with your vCard QR image: <img src="vcard-qr.png" alt="Scan for digital vCard" style="width:176px;height:176px"> -->
+          <div class="qr-ph">Add vCard<br>QR code here</div>
+          <b>Scan for Digital vCard</b>
+          <small>Instant WhatsApp Advisory &amp; Chambers Route</small>
+        </div>
+      </div>
+
+      <div class="advisory-col">
+        <span class="eyebrow">Immediate Chambers Access</span>
+        <h2 class="h2 serif">Connect Directly With Our Advisory Desk</h2>
+        <p>Whether you have an urgent notice deadline or require a retained audit proposal, our duty desk remains accessible across multiple direct channels.</p>
+
+        <div class="tiles">
+          <div class="tile">
+            <svg class="ic" viewBox="0 0 24 24"><use href="#i-phone"/></svg>
+            <div><small>Chambers Phone</small><strong>+91 (011) 2341 8900 / 8901</strong></div>
+          </div>
+          <div class="tile">
+            <svg class="ic" viewBox="0 0 24 24"><use href="#i-mail"/></svg>
+            <div><small>Priority Inquiries</small><strong>advisory@kapoorassociates.in</strong></div>
+          </div>
+          <div class="tile">
+            <svg class="ic" viewBox="0 0 24 24"><use href="#i-clock"/></svg>
+            <div><small>Consultation Hours</small><strong>Mon - Fri: 09:30 AM - 06:30 PM IST</strong></div>
+          </div>
+          <div class="tile">
+            <svg class="ic" viewBox="0 0 24 24"><use href="#i-pin"/></svg>
+            <div><small>Central Chambers</small><strong>Barakhamba Road, CP, New Delhi</strong></div>
+          </div>
+        </div>
+
+        <div class="adv-actions">
+          <a class="btn btn-gold" href="https://wa.me/911123418900" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" style="width:15px;height:15px"><use href="#i-chat"/></svg>Start WhatsApp Quick Advisory</a>
+          <a class="link-u" href="#contact">Or Schedule Chambers Visit →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+<section class="testi" id="testimonials" aria-labelledby="testi-title">
+  <div class="container">
+    <div class="sec-head">
+      <span class="eyebrow">Client Experiences</span>
+      <h2 class="h2 serif" id="testi-title">Trust Is Earned Through Every Interaction.</h2>
+      <p>Hear directly from managing directors, financial controllers, and founders who trust our counsel.</p>
+    </div>
+
+    <div class="testi-grid">
+      <figure class="review" style="margin:0">
+        <div>
+          <div class="stars" aria-label="5 out of 5 stars">
+            <svg class="ic fill" viewBox="0 0 24 24"><use href="#i-star"/></svg><svg class="ic fill" viewBox="0 0 24 24"><use href="#i-star"/></svg><svg class="ic fill" viewBox="0 0 24 24"><use href="#i-star"/></svg><svg class="ic fill" viewBox="0 0 24 24"><use href="#i-star"/></svg><svg class="ic fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+          </div>
+          <blockquote style="margin-top:7px"><p>“Kapoor &amp; Associates resolved our complex GST assessment notice which had been lingering for over twelve months. Their deep familiarity with departmental precedents and technical citations saved our logistics firm substantial working capital.”</p></blockquote>
+        </div>
+        <figcaption class="reviewer">
+          <span class="av">AL</span>
+          <div><b>Harish V. Singhal</b><small>Director • Apex Logistics Pvt Ltd</small></div>
+        </figcaption>
+      </figure>
+
+      <figure class="review" style="margin:0">
+        <div>
+          <div class="stars" aria-label="5 out of 5 stars">
+            <svg class="ic fill" viewBox="0 0 24 24"><use href="#i-star"/></svg><svg class="ic fill" viewBox="0 0 24 24"><use href="#i-star"/></svg><svg class="ic fill" viewBox="0 0 24 24"><use href="#i-star"/></svg><svg class="ic fill" viewBox="0 0 24 24"><use href="#i-star"/></svg><svg class="ic fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+          </div>
+          <blockquote style="margin-top:7px"><p>“As a fast-scaling tech venture with cross-border software revenue, their Transfer Pricing dossier and Section 80-IAC filings were flawless. They act not as outside auditors, but as our true fractional CFO team.”</p></blockquote>
+        </div>
+        <figcaption class="reviewer">
+          <span class="av alt">NT</span>
+          <div><b>Dr. Ananya Mathur</b><small>Founder &amp; CEO • NexaTech Solutions</small></div>
+        </figcaption>
+      </figure>
+
+      <figure class="review" style="margin:0">
+        <div>
+          <div class="stars" aria-label="5 out of 5 stars">
+            <svg class="ic fill" viewBox="0 0 24 24"><use href="#i-star"/></svg><svg class="ic fill" viewBox="0 0 24 24"><use href="#i-star"/></svg><svg class="ic fill" viewBox="0 0 24 24"><use href="#i-star"/></svg><svg class="ic fill" viewBox="0 0 24 24"><use href="#i-star"/></svg><svg class="ic fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+          </div>
+          <blockquote style="margin-top:7px"><p>“We have relied on CA Rajesh Kapoor and his partners for over 15 years for statutory healthcare chain audits. Unflinching integrity, zero tolerance for clerical errors, and complete discretion at all times.”</p></blockquote>
+        </div>
+        <figcaption class="reviewer">
+          <span class="av">SH</span>
+          <div><b>Ramanuj Banerjee</b><small>Managing Partner • Shanti Healthcare Group</small></div>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ================= INSIGHTS ================= -->
+<section class="insights" id="insights" aria-labelledby="ins-title">
+  <div class="container">
+    <div class="ins-head">
+      <div>
+        <span class="eyebrow">Regulatory Bulletins</span>
+        <h2 class="h2 serif" id="ins-title" style="margin-top:6px">Insights That Keep Your Business Informed.</h2>
+      </div>
+      <a href="#insights" class="link-arrow">Browse Comprehensive Circulars →</a>
+    </div>
+
+    <div class="ins-grid">
+      <article class="art">
+        <div class="art-body">
+          <div class="art-top"><span class="tag">Indirect Tax</span><span class="meta">8 min read • May 2025</span></div>
+          <h3 class="h3 serif">Important GST Compliance Updates for Businesses in FY 2025-26</h3>
+          <p class="desc">An analytical dissection of the latest GST Council revisions regarding automated e-invoicing thresholds and electronic credit reversal rules.</p>
+        </div>
+        <a href="#insights" class="art-link">Read Analysis →</a>
+      </article>
+
+      <article class="art">
+        <div class="art-body">
+          <div class="art-top"><span class="tag">Direct Tax</span><span class="meta">6 min read • April 2025</span></div>
+          <h3 class="h3 serif">Understanding Tax Audit Requirements: Section 44AB Decoded</h3>
+          <p class="desc">Turnover threshold calculations, digital transaction percentages, and penalty provisions under 271B outlined clearly for directors.</p>
+        </div>
+        <a href="#insights" class="art-link">Read Analysis →</a>
+      </article>
+
+      <article class="art">
+        <div class="art-body">
+          <div class="art-top"><span class="tag">Corporate Governance</span><span class="meta">10 min read • March 2025</span></div>
+          <h3 class="h3 serif">Essential Financial Records &amp; MIS Every Growing SME Must Maintain</h3>
+          <p class="desc">From aged receivables to dynamic cash flow forecasting, how standard monthly ledger reviews safeguard businesses from insolvency.</p>
+        </div>
+        <a href="#insights" class="art-link">Read Analysis →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="faq" aria-labelledby="faq-title">
+  <div class="faq-wrap">
+    <div class="sec-head" style="margin-bottom:0">
+      <span class="eyebrow">Clarifications &amp; Scope</span>
+      <h2 class="h2 serif" id="faq-title">Frequently Asked Questions</h2>
+      <p>Clear answers to common questions regarding regulatory workflows, engagement terms, and statutory timetables.</p>
+    </div>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false">What services does your CA firm provide?<svg class="ic" viewBox="0 0 24 24"><use href="#i-chevron"/></svg></button>
+        <div class="faq-a">Our services span statutory and internal audit, GST, income tax, accounting and bookkeeping, business compliance, and financial advisory. Please contact our advisory desk for a detailed answer tailored to your business.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false">How can I register for GST and what is the process?<svg class="ic" viewBox="0 0 24 24"><use href="#i-chevron"/></svg></button>
+        <div class="faq-a">We handle GST registration and migration end to end. Please contact our advisory desk for a detailed answer based on your entity type and turnover.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false">What documents are required for annual GST return filing?<svg class="ic" viewBox="0 0 24 24"><use href="#i-chevron"/></svg></button>
+        <div class="faq-a">The documents required depend on your filings and books of accounts. Please contact our advisory desk for a detailed checklist.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false">When is a tax audit mandatory under the Income Tax Act?<svg class="ic" viewBox="0 0 24 24"><use href="#i-chevron"/></svg></button>
+        <div class="faq-a">Tax audit requirements under Section 44AB depend on turnover, profession and digital transaction thresholds. Please contact our advisory desk for a detailed answer.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false">Do you provide end-to-end accounting services for early-stage startups?<svg class="ic" viewBox="0 0 24 24"><use href="#i-chevron"/></svg></button>
+        <div class="faq-a">Yes, we support early-stage companies with bookkeeping, monthly MIS and compliance. Please contact our advisory desk to discuss your requirements.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false">Can your firm assist with responding to GST and Income Tax notices?<svg class="ic" viewBox="0 0 24 24"><use href="#i-chevron"/></svg></button>
+        <div class="faq-a">Yes, we assist with notice responses, defense and appeals. Please contact our advisory desk with the notice details so we can advise on next steps.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false">How can I schedule an in-person or virtual consultation?<svg class="ic" viewBox="0 0 24 24"><use href="#i-chevron"/></svg></button>
+        <div class="faq-a">Use the "Book a Consultation" button, the enquiry form, or call our advisory desk on +91 (011) 2341 8900 to arrange an in-person or virtual meeting.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA BAND ================= -->
+<section class="cta" aria-labelledby="cta-title">
+  <div class="container">
+    <div class="cta-bar" aria-hidden="true"></div>
+    <h2 id="cta-title">Your Business Deserves the<br>Right Financial Guidance.</h2>
+    <p>Whether you are steering a growing company, managing complex audit mandates, or seeking proactive cross-border tax advisory, our experienced partners are ready to protect and advance your balance sheet.</p>
+
+    <div class="cta-row">
+      <a href="#contact" class="btn btn-gold">Schedule Chambers Consultation</a>
+      <a href="#contact" class="btn btn-ghost">Contact Advisory Team →</a>
+    </div>
+
+    <div class="quick-pill">
+      <span><svg class="ic" viewBox="0 0 24 24"><use href="#i-phone"/></svg>+91 (011) 2341 8900</span>
+      <span class="sep">|</span>
+      <span><svg class="ic" viewBox="0 0 24 24"><use href="#i-mail"/></svg>advisory@kapoorassociates.in</span>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <div class="logo-row">
+          <span class="logo-mark" aria-hidden="true">K</span>
+          <h4>Kapoor &amp;<br>Associates</h4>
+        </div>
+        <p>Providing distinguished fiduciary counsel, statutory audit, corporate restructuring, and comprehensive cross-border taxation services since 1988.</p>
+        <div class="foot-gold"><svg class="ic" viewBox="0 0 24 24"><use href="#i-check-circle"/></svg>ICAI Peer Reviewed Unit</div>
+      </div>
+
+      <div class="foot-col">
+        <h5>Practice Areas</h5>
+        <ul>
+          <li><a href="#services">Statutory &amp; Internal Audit</a></li>
+          <li><a href="#services">Corporate &amp; International Tax</a></li>
+          <li><a href="#services">M&amp;A Transaction Advisory</a></li>
+          <li><a href="#services">Transfer Pricing Dossiers</a></li>
+          <li><a href="#services">Forensic Accounting &amp; Due Diligence</a></li>
+          <li><a href="#services">FEMA, SEBI &amp; Regulatory Compliance</a></li>
+        </ul>
+      </div>
+
+      <div class="foot-col">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="#about">Firm Profile &amp; Partners</a></li>
+          <li><a href="#achievements">Landmark Audits &amp; Accreditations</a></li>
+          <li><a href="#testimonials">Client Endorsements</a></li>
+          <li><a href="#insights">Fiscal Bulletins &amp; Circulars</a></li>
+          <li><a href="#contact">Executive Chambers Access</a></li>
+        </ul>
+      </div>
+
+      <div class="foot-col contact">
+        <h5>Chambers &amp; Contact</h5>
+        <ul>
+          <li><svg class="ic" viewBox="0 0 24 24"><use href="#i-pin"/></svg><span>Chambers 402-406, Barakhamba Road,<br>Connaught Place, New Delhi - 110001</span></li>
+          <li><svg class="ic" viewBox="0 0 24 24"><use href="#i-phone"/></svg><span>+91 (011) 2341 8900</span></li>
+          <li><svg class="ic" viewBox="0 0 24 24"><use href="#i-mail"/></svg><span>advisory@kapoorassociates.in</span></li>
+          <li><svg class="ic" viewBox="0 0 24 24"><use href="#i-clock"/></svg><span>Mon - Fri: 09:30 AM - 06:30 PM IST</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="foot-bottom">
+      <p>© 2024 Kapoor &amp; Associates, Chartered Accountants. Firm Registration No. 004128N.</p>
+      <div class="foot-links">
+        <a href="#top">Regulatory Disclosures</a>
+        <a href="#top">Privacy Policy</a>
+        <a href="#top">Terms of Engagement</a>
+      </div>
+    </div>
+
+    <div class="disclaimer">
+      <strong>ICAI REGULATORY DISCLAIMER:</strong> As per the Chartered Accountants Act, 1949 and the Code of Ethics established by the Institute of Chartered Accountants of India (ICAI), CA firms are strictly prohibited from soliciting clients or advertising services. The contents of this portal are intended solely for general informational purposes upon voluntary access by visitors and should not be construed as legal, fiscal, or audit advice.
+    </div>
+  </div>
+</footer>
+
+<!-- ================= FLOATING WHATSAPP ================= -->
+<a class="wa-float" href="https://wa.me/911123418900" target="_blank" rel="noopener" aria-label="Quick advisory on WhatsApp">
+  <span class="wa-ic"><svg class="ic" viewBox="0 0 24 24"><use href="#i-chat"/></svg></span>
+  <span>
+    <b>Quick Advisory</b>
+    <small>WhatsApp Support</small>
+  </span>
+</a>
+
+<script>
+/* ============================================================
+   CONFIG
+   ============================================================ */
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbydQ0rgKpvSKvu8Jt9aqZ6_8_PdNAN7MHo6cLQULTnNHmt1DXHvcgABq9D9pAMgxZMG/exec";
+
+/* ============================================================
+   MOBILE NAV
+   ============================================================ */
+(function () {
+  const toggle = document.getElementById('menuToggle');
+  const nav = document.getElementById('mainNav');
+  toggle.addEventListener('click', function () {
+    const open = nav.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  nav.querySelectorAll('a').forEach(function (a) {
+    a.addEventListener('click', function () {
+      nav.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+})();
+
+/* ============================================================
+   FAQ ACCORDION
+   ============================================================ */
+document.querySelectorAll('.faq-q').forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    const item = btn.closest('.faq-item');
+    const open = item.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+});
+
+/* ============================================================
+   ENQUIRY FORM -> Google Sheets (via Apps Script)
+   ============================================================ */
+const form = document.getElementById('enquiryForm');
+const fName = document.getElementById('fName');
+const fPhone = document.getElementById('fPhone');
+const fEmail = document.getElementById('fEmail');
+const submitBtn = document.getElementById('submitBtn');
+const statusEl = document.getElementById('formStatus');
+
+function setStatus(message, type) {
+  statusEl.textContent = message;
+  statusEl.className = 'form-status' + (type ? ' ' + type : '');
+}
+
+function showSuccess() {
+  setStatus('Thank you. Our advisory desk will reach out to you shortly.', 'ok');
+  form.reset();
+  submitBtn.disabled = false;
+}
+
+function showError() {
+  setStatus('Something went wrong. Please try again or call +91 (011) 2341 8900.', 'err');
+  submitBtn.disabled = false;
+}
+
+form.addEventListener('submit', function (e) {
+  e.preventDefault();
+  if (!form.checkValidity()) {
+    form.reportValidity();
+    return;
+  }
+
+  const name = fName.value.trim();
+  const email = fEmail.value.trim();
+  const phone = fPhone.value.trim();
+
+  submitBtn.disabled = true;
+  setStatus('Submitting...');
+
+  const url = SCRIPT_URL + "?" + new URLSearchParams({name, email, phone});
+
+  fetch(url, { method: "GET", mode: "no-cors" })
+    .then(() => showSuccess())
+    .catch(() => showError());
+});
+</script>
+</body>
+</html>
